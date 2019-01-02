@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block main %}
+	<!-- 用户列表 -->
+	<ol class="breadcrumb">
+	  <li><a href="/admin">管理首页</a></li>
+	  <li><span>分类列表</span></li>
+	</ol>
+	<h3>分类添加</h3>
+	<!-- 添加表单，做分类添加的操作 -->
+	<form method="post">
+		<div class = 'form-group'>
+			<label for="name">名字</label>
+			<input type="text" class = 'form-control' name = "name" placeholder="请输入分类的名称" />
+		</div>
+		<input type="submit" class = "btn btn-primary" value = '提交'/>
+	</form>
+
+{% endblock %}
